@@ -23,7 +23,7 @@ const BooksList: React.FC = () => {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-[90vw] sm:w-[60vw] sm:mt-10 max-w-2xl">
                 {books.map((book, index) => {
-                    const lastImagePosition = books.length % 2 !== 0 && index === books.length - 1;
+                    const lastImagePosition =  index === books.length - 1;
                     return (
                         <Image
                             key={index}
@@ -32,7 +32,7 @@ const BooksList: React.FC = () => {
                             width={200}
                             height={300}
                             priority
-                            className={`cursor-pointer rounded-lg hover:scale-105 transition-transform active:scale-105 h-[50vw] w-[100%] sm:h-[20vw] aspect-h-3 sm:ml-0 ${lastImagePosition ? 'ml-[50%]' : ''}`}
+                            className={`cursor-pointer rounded-lg hover:scale-105 transition-transform active:scale-105 h-[50vw] w-[100%] sm:h-[20vw] aspect-h-3  ${lastImagePosition && 'col-start-2' }`}
                             onClick={() => handleImageClick(book.id)}
                         />
                     );
