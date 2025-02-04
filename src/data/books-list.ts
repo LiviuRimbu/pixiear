@@ -1,4 +1,3 @@
-// src/data/books.ts
 export interface books {
     id: number;
     src: string;

@@ -1,12 +1,14 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import QrScanner from "qr-scanner";
+import {useTranslations} from "next-intl";
 
 interface QRScannerComponentProps {
     onQRCodeScanned: (data: string) => void;
 }
 
 const QRScannerComponent: React.FC<QRScannerComponentProps> = ({ onQRCodeScanned }) => {
+    const t = useTranslations('camera-access');
     const videoRef = useRef<HTMLVideoElement>(null);
     const [error, setError] = useState<string | null>(null);
 
@@ -32,7 +34,7 @@ const QRScannerComponent: React.FC<QRScannerComponentProps> = ({ onQRCodeScanned
                 console.log("QR scanner started");
             } catch (err) {
                 console.error("Error starting QR scanner:", err);
-                setError("Failed to start the QR scanner. Please check camera permissions.");
+                setError( t('camera-access-error'));
             }
         };
 

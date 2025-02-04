@@ -22,7 +22,8 @@
     "button": "Back",
     "wrong-code": "Scanned wrong Qr code"
   },
-  "camera-access" : {
-    "alert": "Instructions, very smart instructions"
+  "camera-access": {
+    "alert": "Instrucțiuni serioase și prețioase",
+    "camera-access-error": "🚨 Camera access is blocked! 1️⃣ Click the 🔒 (lock) icon in the address bar.2️⃣ Select \"Site settings.\" 3️⃣ Find \"Camera\" and choose \"Allow.\" 4️⃣ Refresh the page."
   }
 }

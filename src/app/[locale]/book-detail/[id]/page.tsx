@@ -27,7 +27,7 @@ const BookDetail: React.FC = () => {
 				imgClassName="mr-[15px]"
 			/>
 			<LinkButton
-				href={id === "3" ? `https://pilgrimqr.com/#/` : `/${currentLocale}/book-detail/id=${id}/qrcode`}
+				href={`/${currentLocale}/book-detail/id=${id}/qrcode`}
 				// href={`https://pilgrimqr.com/#/`}
 				className=""
 				imageSrc={"/images/qr-code-white.png"}
