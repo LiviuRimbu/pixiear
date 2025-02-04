@@ -69,11 +69,13 @@ const IframeVideo: React.FC<IframeVideoProps> = ({id}) => {
                 isLandscape ? ' w-[100vw] h-[100%]' : 'w-[90vw] h-[80vw]'
             } top-[15vh] left-[5vw] z-[100]`}
         >
+            {/*<RandomAnimation isLandscape={isLandscape}/>*/}
             <DetectRotation onLandscape={handleLandscape} onPortrait={handlePortrait}/>
             {showAnimation && (
-                <RandomAnimation/>
+                <RandomAnimation isLandscape={isLandscape}/>
             )
             }
+
             <iframe
                 ref={iframeRef}
                 src={`https://player.vimeo.com/video/${id}&badge=0&autopause=0&player_id=1&app_id=58479&byline=0&title=0&portrait=0&dnt=1&autoplay=1&quality=360p&api=1`}
