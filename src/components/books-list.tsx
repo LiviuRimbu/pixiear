@@ -23,7 +23,8 @@ const BooksList: React.FC = () => {
             </p>
             <div className="grid grid-cols-2 sm:grid-cols-3 gap-4 w-[90vw] sm:w-[60vw] sm:mt-10 max-w-2xl">
                 {books.map((book, index) => {
-                    const lastImagePosition = books.length % 2 !== 0 && index === books.length - 1;
+                    const lastImagePosition = books.length-1 % 2 !== 0 && index === books.length - 1;
+                    console.log(books.length, ' qqqq')
                     return (
                         <Image
                             key={index}
