@@ -20,7 +20,7 @@ const IframeComponent: React.FC = () => {
         const timer = setTimeout(() => {
             setShowButton(true);
             setTimeout(() => setFadeIn(true), 100);
-        }, 7000); // 7 seconds delay
+        }, 20000);
 
         return () => clearTimeout(timer);
     }, []);
