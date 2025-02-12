@@ -29,7 +29,7 @@ export default function InstructionsModal() {
                 className="opacity-100 py-[2rem] "
             >
                 <div className="opacity-100 px-[2rem] mt-[2rem] flex flex-col items-center justify-items-start
-                                max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100">
+                                max-h-[80vh] overflow-y-auto scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-gray-100 ">
                     <div className="opacity-100 px-[2rem] mt-[2rem] flex flex-col items-center justify-items-start">
                         <div className="flex flex-col items-start ">
                             <p className="text-2xl mb-[1rem]  text-[rgba(46,204,239,0.8)]">
@@ -38,7 +38,7 @@ export default function InstructionsModal() {
                             {t.raw("scan-3d-steps").map((step: string, index: number) => (
                                 <p
                                     key={index}
-                                    className="text-xl"
+                                    className="text-xl text-white"
                                 >
                                     {index + 1}. {step}
                                     {index === 1 &&
@@ -69,7 +69,7 @@ export default function InstructionsModal() {
                             {t.raw("scan-content-steps").map((step: string, index: number) => (
                                 <p
                                     key={index}
-                                    className="text-xl"
+                                    className="text-xl text-white"
                                 >
                                     {index + 1}. {step}
                                     {index === 1 &&

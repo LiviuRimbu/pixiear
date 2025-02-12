@@ -1,7 +1,7 @@
 {
   "header": {
     "title": "Bun Venit",
-    "help": "Instrucțiune",
+    "help": "Instrucțiuni",
     "scan-3d-title": "Pentru activarea coperții animate 3D",
     "scan-3d-steps": [
       "Selectați cartea a cărei copertă doriți să o scanați;",
@@ -14,7 +14,7 @@
     "scan-content-steps": [
       "Selectați cartea pa care  doriți să o studiați;",
       "Selectaţi „Scanează conţinut“ din meniul aplicației;",
-      "Alegeți-vă o pagină din carte și scanați camera foto spate către codul QR din interiorul ei;",
+      "Alegeți-vă o pagină din carte și îndreptați camera foto spate către codul QR de pe acea pagină",
       "Se vor încărca automat elemente audio-video din listă."
     ]
   },

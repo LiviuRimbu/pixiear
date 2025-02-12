@@ -17,7 +17,9 @@ const LinkButton: FC<LinkButtonProps> = ({ href, imageSrc, altText, btnTextMain,
 	return (
 		<div >
 			<Link href={`${href}`}>
-				<Button variant="webar" className={` flex justify-between items-center w-[80vw] h-[80px] mb-[5rem] text-[23px] max-w-[500px] ${className}`}>
+				{/*<Button variant="webar" className={` flex justify-between items-center w-[80vw] h-[80px] mb-[5rem] text-[23px] max-w-[500px] ${className}`}>*/}
+				{/*className={`w-[80vw] h-[80px] mb-[5rem] text-[23px] ${className}`}>*/}
+				<Button variant="webar" className={` flex justify-between items-center xs:justify-center  w-[80vw] h-[80px] mb-[5rem] text-[23px] max-w-[500px] ${className}`}>
 					<Image
 						src={imageSrc}
 						className={` transform  rounded-full aspect-square ${imgClassName}`}
