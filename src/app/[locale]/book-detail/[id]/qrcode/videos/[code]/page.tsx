@@ -43,7 +43,7 @@ const Videos: React.FC = () => {
                 <LinkButton
                     href={`/${currentLocale}/book-detail/id=${id}/qrcode`}
                     className="w-[228px] h-[65px] text-[23px] mb-[3rem]"
-                    imageSrc="/images/qr-code-white.png"
+                    imageSrc="/images/qr-code-white.webp"
                     altText="cover book"
                     btnTextMain="SCAN"
                     imgClassName="mr-[15px]"
@@ -79,7 +79,7 @@ const Videos: React.FC = () => {
             ) : null}
             <InfoHeader
                 btnText={t('button')}
-                imageSrc="/images/qr-code.png"
+                imageSrc="/images/qr-code.webp"
                 imgText={t('selected-image')}
                 navigationWay={`${currentLocale}/book-detail/id=${id}/qrcode`}
             />

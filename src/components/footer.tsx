@@ -7,7 +7,7 @@ export default function Footer() {
 
         <div className="relative w-full mt-[4rem] bottom-0 left-0 sm:mt-[25%]">
             <Image
-                src="/images/leafs.png"
+                src="/images/leafs.webp"
                 alt="background img"
                 width={4000}
                 height={20}

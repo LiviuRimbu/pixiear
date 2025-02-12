@@ -30,7 +30,7 @@ const BookDetail: React.FC = () => {
 				href={`/${currentLocale}/book-detail/id=${id}/qrcode`}
 				// href={`https://pilgrimqr.com/#/`}
 				className=""
-				imageSrc={"/images/qr-code-white.png"}
+				imageSrc={"/images/qr-code-white.webp"}
 				altText="qr"
 				btnTextMain = {t('btn-scan-content')}
 				btnTextSec = {t('btn-scan-content-sec')}

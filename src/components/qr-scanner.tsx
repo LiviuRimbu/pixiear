@@ -63,7 +63,7 @@ const QRScannerComponent: React.FC<QRScannerComponentProps> = ({ onQRCodeScanned
             <div className="w-screen h-screen overflow-hidden relative">
 
                 <Image
-                    src="/images/qr-code-white.png"
+                    src="/images/qr-code-white.webp"
                     alt="QR Scanner logo"
                     width={40}
                     height={40}

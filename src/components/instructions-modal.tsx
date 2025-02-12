@@ -43,7 +43,7 @@ export default function InstructionsModal() {
                                     {index + 1}. {step}
                                     {index === 1 &&
                                         <Image
-                                            src="/images/scan-cover.png"
+                                            src="/images/scan-cover.webp"
                                             alt="scan"
                                             width={350}
                                             height={350}>
@@ -52,7 +52,7 @@ export default function InstructionsModal() {
                                     }
                                     {index === 2 &&
                                         <Image
-                                            src="/images/launch.png"
+                                            src="/images/launch.webp"
                                             alt="scan"
                                             width={250}
                                             height={250}>
@@ -74,7 +74,7 @@ export default function InstructionsModal() {
                                     {index + 1}. {step}
                                     {index === 1 &&
                                         <Image
-                                            src="/images/scan-content.png"
+                                            src="/images/scan-content.webp"
                                             alt="scan"
                                             width={350}
                                             height={400}

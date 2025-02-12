@@ -46,7 +46,7 @@ const Home: React.FC = () => {
             <QRScannerComponent onQRCodeScanned={handleQRCodeScanned}/>
             <InfoHeader
                 btnText={t("button")}
-                imageSrc={"/images/qr-code.png"}
+                imageSrc={"/images/qr-code.webp"}
                 imgText={t("selected-image")}
                 navigationWay={`${currentLocale}/book-detail/id=${id}/`}
                 className="ml-[1rem]"
