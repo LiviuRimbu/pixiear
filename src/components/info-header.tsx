@@ -10,9 +10,10 @@ interface InfoHeaderProps {
 	btnText: string;
 	imgText: string;
 	navigationWay?: string
+	className?: string;
 }
 
-const InfoHeader: FC<InfoHeaderProps> = ({ imageSrc, btnText, imgText, navigationWay }) => {
+const InfoHeader: FC<InfoHeaderProps> = ({ imageSrc, btnText, imgText, navigationWay,className }) => {
 	const router = useRouter();
 	const handleBack = () => {
 		if (navigationWay){
@@ -23,7 +24,7 @@ const InfoHeader: FC<InfoHeaderProps> = ({ imageSrc, btnText, imgText, navigatio
 	};
 
 	return (
-		<div className="absolute top-5 left-[2vw] flex items-center justify-between w-[90%]">
+		<div className={`absolute top-5  flex items-center justify-between w-[90%] ${className}`}>
 
 			<Button onClick={handleBack} className="mr-[5vw]" variant="webar">
 				{btnText}

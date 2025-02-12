@@ -1,13 +1,29 @@
 {
   "header": {
-    "title": "Welcome"
+    "title": "Welcome",
+    "help": "Instructions",
+    "scan-3d-title": "For activating the 3D animated cover",
+    "scan-3d-steps": [
+      "Select the book cover you want to scan;",
+      "Select 'Scan Cover';",
+      "Press the 'Launch' button;",
+      "Point the main camera of your device at the front cover of the selected book."
+    ],
+
+    "scan-content-title": "For playing the book's content",
+    "scan-content-steps": [
+      "Select 'Scan Content' from the app menu;",
+      "Choose a page from the book and scan the back camera toward the QR code inside it;",
+      "Audio-video elements from the list will load automatically."
+    ]
   },
   "books-covers-ar": {
     "instruction": "Choose a book to scan"
   },
   "iframe" : {
     "selected-image": "Scan this book:",
-    "button": "Back"
+    "button": "Back",
+    "button-to-qr": "Scan Lessons"
   },
   "book-detail" : {
     "selected-image": "Selected this book:",

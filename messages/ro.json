@@ -1,20 +1,37 @@
 {
   "header": {
-    "title": "Bun Venit"
+    "title": "Bun Venit",
+    "help": "Instrucțiune",
+    "scan-3d-title": "Pentru activarea coperții animate 3D",
+    "scan-3d-steps": [
+      "Selectați cartea a cărei copertă doriți să o scanați;",
+      "Selectați „Scanează coperta”;",
+      "Apăsați tasta „Launch”;",
+      "Îndreptați camera foto principală a dispozitivului dvs. către coperta față a cărții alese."
+    ],
+
+    "scan-content-title": "Pentru redarea conținutului cărții",
+    "scan-content-steps": [
+      "Selectați cartea pa care  doriți să o studiați;",
+      "Selectaţi „Scanează conţinut“ din meniul aplicației;",
+      "Alegeți-vă o pagină din carte și scanați camera foto spate către codul QR din interiorul ei;",
+      "Se vor încărca automat elemente audio-video din listă."
+    ]
   },
   "books-covers-ar": {
     "instruction": "Alegeți cartea pe care să o scanați"
   },
   "iframe": {
     "selected-image": "Scanați coperta:",
-    "button": "Înapoi"
+    "button": "Înapoi",
+    "button-to-qr": "Scanare Teme"
   },
   "book-detail": {
     "selected-image": "Ati ales cartea:",
     "button": "Înapoi",
     "btn-scan-cover": "Scanează coperta",
     "btn-scan-cover-sec": "Copertă animată 3D",
-    "btn-scan-content": "Scanează content",
+    "btn-scan-content": "Scanează conținut",
     "btn-scan-content-sec": "Redare conținut audio-video"
   },
   "qr-scanner": {

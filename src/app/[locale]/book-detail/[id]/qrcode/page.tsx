@@ -42,14 +42,17 @@ const Home: React.FC = () => {
     }, [searchResult, currentLocale, id, qrCodeData, router]);
 
     return (
-        <div className="h-[100%]">
+        <div className="h-[100%] relative">
             <QRScannerComponent onQRCodeScanned={handleQRCodeScanned}/>
             <InfoHeader
                 btnText={t("button")}
                 imageSrc={"/images/qr-code.png"}
                 imgText={t("selected-image")}
                 navigationWay={`${currentLocale}/book-detail/id=${id}/`}
+                className="ml-[1rem]"
             />
+
+
         </div>
     );
 };

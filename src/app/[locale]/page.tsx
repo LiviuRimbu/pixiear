@@ -8,7 +8,7 @@ import React from "react";
 
 export default function HomePage() {
     return (
-        <div className="min-h-screen flex flex-col justify-center items-center">
+        <div className="min-h-screen flex flex-col justify-center items-center sm:justify-start ">
             {/*<CameraInstrModal isModalOpen= true />*/}
             <Header/>
             <BooksList/>

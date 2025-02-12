@@ -1,7 +1,10 @@
 "use client";
 import React, { useEffect, useRef, useState } from "react";
 import QrScanner from "qr-scanner";
+
+import Image from "next/image";
 import {useTranslations} from "next-intl";
+import {Button} from "@/components/ui/button";
 
 interface QRScannerComponentProps {
     onQRCodeScanned: (data: string) => void;
@@ -58,6 +61,14 @@ const QRScannerComponent: React.FC<QRScannerComponentProps> = ({ onQRCodeScanned
         <div className="fixed h-screen w-screen flex flex-col justify-center items-center bg-black text-white">
             {/* Video feed */}
             <div className="w-screen h-screen overflow-hidden relative">
+
+                <Image
+                    src="/images/qr-code-white.png"
+                    alt="QR Scanner logo"
+                    width={40}
+                    height={40}
+                    className="absolute transform left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[100px] w-[100px] z-40 opacity-30"
+                />
                 <video
                     ref={videoRef}
                     className="w-full h-full object-cover"
@@ -70,12 +81,12 @@ const QRScannerComponent: React.FC<QRScannerComponentProps> = ({ onQRCodeScanned
                 {error && (
                     <div className="absolute top-0 left-0 w-full h-full flex flex-col justify-center items-center bg-black bg-opacity-70 text-white p-4">
                         <p className="text-center text-xl font-bold mb-4">{error}</p>
-                        <button
+                        <Button
                             onClick={() => window.location.reload()}
                             className="mt-4 px-4 py-2 bg-red-500 hover:bg-red-600 rounded-lg"
                         >
                             Retry
-                        </button>
+                        </Button>
                     </div>
                 )}
             </div>

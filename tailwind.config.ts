@@ -81,7 +81,17 @@ module.exports = {
                     '5': 'hsl(var(--chart-5))'
                 }
             }
-        }
+        },
+        animation: {
+            gradient: "gradientBG 5s infinite linear",
+        },
+        keyframes: {
+            gradientBG: {
+                "0%": { backgroundPosition: "0% 50%" },
+                "50%": { backgroundPosition: "100% 50%" },
+                "100%": { backgroundPosition: "0% 50%" },
+            },
+        },
     },
     plugins: [require("tailwindcss-animate")],
 };

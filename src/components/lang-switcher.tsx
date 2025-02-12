@@ -9,9 +9,8 @@ export default function LangSwitcher() {
     const pathWithoutLocale = pathname.replace(/^\/(en|ro)/, '');
 
     return (
-        <div className="absolute sm:mt-[3rem] right-3 sm:mr-[3vw] -top-7 flex flex-row space-x-4 items-center text-violet text-[12px] z-10">
-
-            <Link href={`/en${pathWithoutLocale}`} locale="en" className=" flex flex-col ">
+        <div className="flex mt-[12px]">
+            <Link href={`/en${pathWithoutLocale}`} locale="en" className=" flex flex-col mr-[10px] ">
                 <FlagUK className=" w-5 h-5 rounded-[5px]"/>
                 <span className='text-center  text-violet font-black font-herculanum'>EN</span>
             </Link>
