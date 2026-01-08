@@ -20,7 +20,7 @@ module.exports = {
                 xxl: '1536px',
             },
             backgroundImage: {
-                'ardino-bg': "linear-gradient(rgba(132, 229, 222, 0.8), rgba(148, 204, 253, 0.9)), url('/images/ardino.png')",
+                'ardino-bg': "linear-gradient(rgba(132, 229, 222, 0.8), rgba(148, 204, 253, 0.9)), url('/images/ardino.webp')",
                 // 'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
             },
             backgroundSize: {

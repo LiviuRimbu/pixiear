@@ -2,7 +2,6 @@ import React, {useEffect, useRef, useState} from 'react';
 import Player from '@vimeo/player';
 import DetectRotation from '@/components/detect-rotation';
 import RandomAnimation from "@/components/random-animation";
-import {AudioController} from "@/lib/audio";
 
 interface IframeVideoProps {
     id: string;
@@ -13,14 +12,16 @@ const IframeVideo: React.FC<IframeVideoProps> = ({id}) => {
     const [showAnimation, setShowAnimation] = useState(false);
     const [isLandscape, setIsLandscape] = useState(false);
 
-    const audio = new AudioController('/api/audio');
 
+
+    const audio = new Audio(`/audio/loading.mp3`);
     const handlePlay = () => {
         audio.play();
     };
 
     const handleStop = () => {
-        audio.stop();
+        audio.pause();
+        audio.currentTime = 0;
     };
 
     useEffect(() => {

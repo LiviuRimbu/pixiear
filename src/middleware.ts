@@ -10,6 +10,6 @@ export default createMiddleware({
 export const config = {
     // Match all pages except static files (_next, favicon.ico, manifest.json, etc.)
     matcher: [
-        '/((?!api|_next|manifest.json|favicon.ico|icons|images|robots.txt|sitemap.xml|sw.js).*)',
+        '/((?!api|_next|manifest.json|favicon.ico|icons|images|robots.txt|sitemap.xml|sw.js|audio).*)',
     ],
 };

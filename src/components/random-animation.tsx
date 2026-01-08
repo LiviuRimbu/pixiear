@@ -19,10 +19,8 @@ export default function RandomAnimation({isLandscape}: RandomAnimationProps): JS
             }
         };
 
-        // Try playing when the page loads
         playAudio();
 
-        // Also play on user interaction
         document.addEventListener("click", playAudio);
 
         return () => {
