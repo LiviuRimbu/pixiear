@@ -1,3 +1,5 @@
+'use client'
+
 import React, { useEffect, useRef, useState } from 'react';
 import Player from '@vimeo/player';
 import Image from 'next/image';
@@ -24,7 +26,7 @@ const IframeVideo: React.FC<IframeVideoProps> = ({ id }) => {
         try {
             await audioRef.current?.play();
         } catch (err) {
-            console.warn('Autoplay prevented on mobile, ignoring...');
+            console.warn('Autoplay prevented on mobile');
         }
     };
 
@@ -96,6 +98,7 @@ const IframeVideo: React.FC<IframeVideoProps> = ({ id }) => {
                         width={300}
                         height={300}
                         className="rounded-full"
+                        unoptimized
                     />
                 </div>
             )}

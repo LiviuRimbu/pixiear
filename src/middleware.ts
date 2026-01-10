@@ -18,9 +18,17 @@ export default function middleware(request: NextRequest) {
         pathname.startsWith('/api') ||
         pathname.startsWith('/gif') ||
         pathname.startsWith('/audio') ||
-        pathname.startsWith('/icons') ||
-        pathname.startsWith('/images') ||
-        pathname.match(/\.(webp|gif|png|jpg|jpeg|mp3|wav|mp4|svg|ico)$/)
+        pathname === '/site.webmanifest' ||
+        pathname === '/manifest.json' ||
+        pathname === '/manifest.webmanifest' ||
+        pathname.startsWith('/android-chrome') ||
+        pathname.startsWith('/android-chrome-192x192.png') ||
+        pathname.startsWith('/apple-touch-icon') ||
+        pathname === '/favicon.ico' ||
+        pathname === '/favicon-16x16.png' ||
+        pathname === '/favicon-32x32.png' ||
+        pathname === '/sw.js' ||
+        pathname.match(/\.(webp|gif|png|jpg|jpeg|mp3|wav|mp4|svg|ico|webmanifest)$/)
     ) {
         return NextResponse.next();
     }

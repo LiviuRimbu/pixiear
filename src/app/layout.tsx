@@ -1,4 +1,6 @@
 import type { Metadata } from "next";
+import {GoogleAnalytics} from '@next/third-parties/google'
+
 import localFont from "next/font/local";
 import "./globals.css";
 
@@ -31,6 +33,7 @@ export default function RootLayout({
             <link rel="manifest" href="/site.webmanifest" />
         </head>
         <body className={`${herculanum.variable} antialiased`} style={{ background: 'var(--bg-custom-gradient)' }}>
+        <GoogleAnalytics gaId="G-WYLSB2RVH5"/>
         {children}
         </body>
         </html>
