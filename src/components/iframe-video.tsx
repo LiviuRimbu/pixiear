@@ -104,7 +104,7 @@ const IframeVideo: React.FC<IframeVideoProps> = ({ id }) => {
             )}
             <iframe
                 ref={iframeRef}
-                src={`https://player.vimeo.com/video/${id}?badge=0&autopause=0&player_id=1&app_id=58479&byline=0&title=0&portrait=0&dnt=1&autoplay=1&quality=360p&api=1`}
+                src={`https://player.vimeo.com/video/${id}&badge=0?autopause=0&player_id=1&app_id=58479&byline=0&title=0&portrait=0&dnt=1&autoplay=1&quality=360p&api=1`}
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write"
                 className={`transition-opacity duration-500 ease-in-out rounded-lg shadow-lg ${
                     isLandscape ? 'w-full h-full object-cover' : 'min-w-[300px] w-[90vw] h-[50vw]'
