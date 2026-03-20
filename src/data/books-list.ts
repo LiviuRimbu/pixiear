@@ -18,7 +18,7 @@ export const books: books[] = [
   },
   {
     id: 2,
-    src: "https://mywebar.com/p/franceza-3",
+    src: "https://mywebar.com/p/Project_7_87chzb90ir33869729",
     imageSrc: "/images/france.webp",
   },
 ];
