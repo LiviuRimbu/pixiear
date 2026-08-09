@@ -5,7 +5,7 @@ export default function Footer() {
 
     return (
 
-        <div className="relative w-full mt-[4rem] bottom-0 left-0 sm:mt-[25%]">
+        <div className="md:hidden relative w-full bottom-0 left-0 sm:mt-[25%]">
             <Image
                 src="/images/leafs.webp"
                 alt="background img"
